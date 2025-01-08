@@ -1,0 +1,9 @@
+spotipy>=2.23.0
+python-dotenv>=1.0.0
+pydub>=0.25.1
+librosa>=0.10.1
+numpy>=1.24.0
+soundfile>=0.12.1
+pytest>=7.4.0
+black>=23.7.0
+flake8>=6.1.0
