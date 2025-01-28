@@ -1,9 +1,33 @@
-spotipy>=2.23.0
-python-dotenv>=1.0.0
-pydub>=0.25.1
-librosa>=0.10.1
-numpy>=1.24.0
-soundfile>=0.12.1
-pytest>=7.4.0
-black>=23.7.0
-flake8>=6.1.0
+# Core ML/Audio
+numpy>=1.21.0
+torch>=1.9.0
+torchaudio>=0.9.0
+librosa>=0.8.1
+scipy>=1.7.0
+soundfile>=0.10.3
+
+# Deep Learning
+tensorflow>=2.8.0  # For additional ML models
+pytorch-lightning>=1.5.0  # For model training
+spleeter>=2.3.0  # For source separation
+
+# Audio Processing
+pyDynaMix>=1.0.0  # For dynamic mixing
+rubberband>=1.9.0  # For time-stretching
+soundstretch>=1.0.0  # For pitch-shifting
+
+# Analysis
+essentia>=2.1.0  # For music analysis
+madmom>=0.16.1  # For rhythm analysis
+mir_eval>=0.6  # For music evaluation
+
+# Utilities
+aiohttp>=3.8.0
+python-dotenv>=0.19.0
+pydantic>=1.8.2
+matplotlib>=3.4.0
+scikit-learn>=0.24.0
+
+# Optional but recommended
+cuda-python  # For GPU acceleration
+numba>=0.55.0  # For performance optimization

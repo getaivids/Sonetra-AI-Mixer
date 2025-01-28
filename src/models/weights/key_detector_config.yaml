@@ -1,0 +1,29 @@
+name: "key_detector"
+version: "1.0.0"
+architecture:
+  input_features: 18
+  hidden_dims: [32, 64]
+  output_dims: 14  # 12 keys + 2 scales
+
+training_params:
+  optimizer:
+    name: "Adam"
+    params:
+      lr: 0.001
+      weight_decay: 0.0001
+  
+  scheduler:
+    name: "CosineAnnealingLR"
+    params:
+      T_max: 10
+      eta_min: 0.00001
+  
+  criterion:
+    name: "CrossEntropyLoss"
+    params: {}
+  
+  batch_size: 64
+  num_epochs: 150
+  early_stopping_patience: 15
+
+weights_path: "models/weights/key_detector_v1.pt" 

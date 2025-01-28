@@ -1,0 +1,29 @@
+genre_fusion_ai/
+├── src/
+│   ├── core/
+│   │   ├── __init__.py
+│   │   ├── genre_match_engine.py
+│   │   ├── transition_engine.py
+│   │   └── genre_fusion_platform.py
+│   ├── models/
+│   │   ├── __init__.py
+│   │   ├── classifiers.py
+│   │   ├── analyzers.py
+│   │   ├── detectors.py
+│   │   ├── generators.py
+│   │   └── processors.py
+│   ├── utils/
+│   │   ├── __init__.py
+│   │   ├── audio.py
+│   │   └── preprocessing.py
+│   └── config/
+│       ├── __init__.py
+│       └── settings.py
+├── tests/
+│   ├── __init__.py
+│   ├── test_genre_match.py
+│   ├── test_transition.py
+│   └── test_platform.py
+├── requirements.txt
+├── setup.py
+└── README.md 
