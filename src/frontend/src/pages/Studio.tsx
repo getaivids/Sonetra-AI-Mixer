@@ -21,7 +21,7 @@ import {
   Pause,
   Volume2,
   Download,
-  Waveform,
+  Activity as Waveform,
   Music,
   FileAudio,
   Trash2,
