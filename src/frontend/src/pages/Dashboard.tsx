@@ -115,7 +115,7 @@ const Dashboard = () => {
     {
       title: 'Mixing Console',
       description: 'Open professional mixing tools',
-      icon: Mixer,
+      icon: Settings2,
       action: () => navigate('/mixing'),
       color: '#f59e0b',
     },
