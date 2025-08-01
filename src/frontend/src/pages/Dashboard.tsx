@@ -71,7 +71,7 @@ const Dashboard = () => {
       label: 'Hours Mixed',
       value: '48',
       change: '+12',
-      icon: Mixer,
+      icon: Settings2,
       color: '#8b5cf6',
     },
     {
