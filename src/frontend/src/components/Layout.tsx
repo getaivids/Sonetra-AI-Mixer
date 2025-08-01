@@ -21,7 +21,7 @@ import { useNavigate, useLocation } from 'react-router-dom';
 import { 
   Home, 
   Music, 
-  Mixer, 
+  Settings2 as Mixer, 
   Settings, 
   BarChart,
   GitHub,
