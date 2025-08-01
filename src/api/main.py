@@ -38,6 +38,16 @@ style_analyzer = StyleAnalyzer()
 transition_engine = TransitionEngine()
 style_transfer = StyleTransferEngine()
 
+@app.get("/api/health")
+async def health_check():
+    """Health check endpoint"""
+    return {"status": "healthy", "message": "SONETRA API is running"}
+
+@app.get("/")
+async def root():
+    """Root endpoint"""
+    return {"message": "SONETRA - AI Powered Music Platform API"}
+
 @app.post("/api/analyze/track")
 async def analyze_track(
     file: UploadFile = File(...)
