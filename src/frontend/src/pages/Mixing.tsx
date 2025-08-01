@@ -25,7 +25,7 @@ import {
   Pause,
   RotateCcw,
   Settings,
-  Equalizer,
+  Equalizer3 as Equalizer,
   Filter,
   Waves,
   Zap,
