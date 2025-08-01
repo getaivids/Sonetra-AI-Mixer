@@ -78,7 +78,7 @@ async def analyze_track(
         # Cleanup
         Path(tmp_path).unlink()
 
-@app.post("/transition/create")
+@app.post("/api/transition/create")
 async def create_transition(
     file1: UploadFile = File(...),
     file2: UploadFile = File(...),
