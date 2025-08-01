@@ -38,7 +38,7 @@ const drawerWidth = 280;
 const navigationItems = [
   { text: 'Dashboard', path: '/', icon: Home },
   { text: 'Studio', path: '/studio', icon: Music },
-  { text: 'Mixing', path: '/mixing', icon: Mixer },
+  { text: 'Mixing', path: '/mixing', icon: Settings2 },
   { text: 'Mastering', path: '/mastering', icon: Settings },
   { text: 'Analysis', path: '/analysis', icon: BarChart },
 ];
