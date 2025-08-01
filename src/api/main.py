@@ -125,7 +125,7 @@ async def create_transition(
         Path(path2).unlink()
         Path(output_path).unlink()
 
-@app.post("/style/transfer")
+@app.post("/api/style/transfer")
 async def transfer_style(
     file: UploadFile = File(...),
     target_style: str = "electronic",
