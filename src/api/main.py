@@ -38,7 +38,7 @@ style_analyzer = StyleAnalyzer()
 transition_engine = TransitionEngine()
 style_transfer = StyleTransferEngine()
 
-@app.post("/analyze/track")
+@app.post("/api/analyze/track")
 async def analyze_track(
     file: UploadFile = File(...)
 ) -> Dict[str, Any]:
