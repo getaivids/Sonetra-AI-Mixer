@@ -38,7 +38,17 @@ style_analyzer = StyleAnalyzer()
 transition_engine = TransitionEngine()
 style_transfer = StyleTransferEngine()
 
-@app.post("/analyze/track")
+@app.get("/api/health")
+async def health_check():
+    """Health check endpoint"""
+    return {"status": "healthy", "message": "SONETRA API is running"}
+
+@app.get("/")
+async def root():
+    """Root endpoint"""
+    return {"message": "SONETRA - AI Powered Music Platform API"}
+
+@app.post("/api/analyze/track")
 async def analyze_track(
     file: UploadFile = File(...)
 ) -> Dict[str, Any]:
@@ -78,7 +88,7 @@ async def analyze_track(
         # Cleanup
         Path(tmp_path).unlink()
 
-@app.post("/transition/create")
+@app.post("/api/transition/create")
 async def create_transition(
     file1: UploadFile = File(...),
     file2: UploadFile = File(...),
@@ -125,7 +135,7 @@ async def create_transition(
         Path(path2).unlink()
         Path(output_path).unlink()
 
-@app.post("/style/transfer")
+@app.post("/api/style/transfer")
 async def transfer_style(
     file: UploadFile = File(...),
     target_style: str = "electronic",
@@ -163,4 +173,4 @@ async def transfer_style(
     finally:
         # Cleanup
         Path(tmp_path).unlink()
-        Path(output_path).unlink() 
+        Path(output_path).unlink()
