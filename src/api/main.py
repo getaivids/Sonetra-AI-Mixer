@@ -173,4 +173,4 @@ async def transfer_style(
     finally:
         # Cleanup
         Path(tmp_path).unlink()
-        Path(output_path).unlink() 
+        Path(output_path).unlink()
